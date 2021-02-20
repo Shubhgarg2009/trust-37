@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel = "icon" href = "logo.png" type = "image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girish Foundation</title>
+    <link rel="stylesheet" href="about/idea/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src="about/idea/idea.png" alt="">
+      </div>
+<div class="card-content">
+        <div class="wrapper">
+          <div class="title">
+            Idea Of Starting A Trust</div>
+<p>
+    "My Dream was already to set up an NGO which helps poor by providing them a house and all facilities they need.
+    <br> So My father gave me a suggestion to start a Trust and donate money per month and that money would be given to the one in Need.</br> 
+    I then only started building a website from where everyone can donate and know about our portfolio so this is all About How we started."</p>
+          <div class="content size">
+</div>
+</div>
+</div>
+<script>
+      $(".colour-value span").click(function(){
+        $(".colour-value span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background", $(this).attr("data-color"));
+        $(".wrapper .price").css("color", $(this).attr("data-color"));
+        $(".size-value span.color").css("color", $(this).attr("data-color"));
+        $(".size-value span.active").css("background", $(this).attr("data-color"));
+        $(".image img").attr("src", $(this).attr("data-img"));
+        $(".btns button").css({
+          "background": $(this).attr("data-color"),
+          "border-color": $(this).attr("data-color")
+        });
+      });
+    </script>
+
+  </body>
+</html>

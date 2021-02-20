@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Girish Foundation</title>
+         <link rel = "icon" href = "logo.png" type = "image/x-icon">
+     <link rel="stylesheet" href="image/style.css"/>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     </head>
+     <body>
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="index.html">Girish Foundation</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" class="desktop-item">Details and Donating </a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              <ul class="drop-menu">
+               
+                <li><a href="donate.html">Donate Now</a></li>
+                <li><a href="upi.html">UPI apps Information</a></li>
+                <li><a href="helpcentre.html">Contact</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Other</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Other</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                     <img src="logo2.png" alt="">
+                  </div>
+                  <div class="row">
+                    <header>About Us</header>
+                    <ul class="mega-links">
+                      <li><a href="team.html">Our Team</a></li>
+                      <li><a href="since.html">About Girish Foundation</a></li>
+                      <li><a href="idea.html">Idea To start the trust</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Community</header>
+                    <ul class="mega-links">
+                      
+                      <li><a href="follow.html">Follow Us</a></li>
+                      <li><a href="images.html">Photo Gallery</a></li>
+                      <li><a href="more.html">Read more</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Website</header>
+                    <ul class="mega-links">
+                      <li><a href="instructions.html">Instructions</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="helpcentre.html">Contact & Email</a></li>
+            <li><a href="rate.html">Feedback</a></li>
+            
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+    <div class="automatic">
+      <div class="content">
+        <div class="images">
+          <img src="image/image1.png">
+          <img src="image/image2.png">
+          <img src="image/image3.png">
+          <img src="image/image4.png">
+          <img src="image/image5.png">
+          <img src="image/image6.png">
+          <img src="image/image7.png">
+          <img src="image/image8.png">
+          <img src="image/image9.png">
+          <img src="image/image10.png">
+          <img src="image/image11png">
+        </div>
+    </div>
+    <script>
+      var indexValue = 0;
+      function slideShow(){
+        setTimeout(slideShow, 2500);
+        var x;
+        const img = document.querySelectorAll("img");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
+      slideShow();
+    </script>
+
+     </body>
+ </html>
